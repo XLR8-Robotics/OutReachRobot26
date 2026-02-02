@@ -7,19 +7,22 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 public class BasicDriveTrainTeleop extends OpMode {
 
     @Override
-    public void init()
-    {
+    public void init() {
+        telemetry.addLine("Initialized");
+        telemetry.update();
     }
 
     @Override
-    public void start()
-    {
-
+    public void start() {
+        telemetry.addLine("Started");
+        telemetry.update();
     }
 
     @Override
-    public void loop()
-    {
+    public void loop() {
+        telemetry.addLine("Running");
+        telemetry.update();
     }
+
 
 }
